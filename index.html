@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/Aprendiendo-ChATiN.png" type="imagen/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="imagenes/Logo a.svg" alt="Logo de Alura">
+      </header>
+
+      <main class="main_container">
+        <form class="form">
+          <textarea class="form_frase" cols="25" rows="12" id="frase" placeholder="Escriba su texto Aqui!!!...&#128395;" required></textarea>
+          
+          <div class="form_sugerencia">
+            <span class="form_icon"><img src="imagenes/icon.svg"></span>
+            <p class="form_parrafo">&#10060;Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="btn_container">
+            <input class="btn btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+            <input class="btn btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+          </div>
+        </form>
+
+        <section class="desencriptar">
+          <div class="desencriptar_mensaje">
+            <img class="desencriptar_mensaje_img-muñeco" src="imagenes/muñeco.svg" alt="Muñeco Ilustración">
+            <h2 class="desencriptar_mensaje_titulo">Ningún mensaje fue encontrado</h2>
+            <p class="desencriptar_mensaje_parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+
+          <div class="desencriptar_resultado">
+            <textarea class="frase-encriptada" cols="18" rows="9" id="frase-encriptada" readonly></textarea>
+            <input class="btn btn-copiar" id="btn-copiar" type="button" value="&#128221;Copiar">
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+
+        <p class="copyright">&#9755; &copy; 2022 Aprendiendo-Jose luis ORTIZ </p>
+   
+      </footer>
+    </div>
+  <script src="funcion.js"></script>
+</body>
+</html>
